@@ -242,6 +242,8 @@ com\.google\.vr\.platform.*
 # Packages used for Android in Chrome OS
 org\.chromium\.arc
 org\.chromium\.arc\..*
+vendor\.samsung\.hardware\.radio\.V1_2
+vendor\.mediatek\.hardware\.radio\.V2_0
 
 ###################################################
 # CodeAurora IMS functionality needed by frameworks/opt/telephony
