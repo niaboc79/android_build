@@ -72,6 +72,9 @@ PRODUCT_PACKAGES += \
     UserDictionaryProvider \
     VpnDialogs \
     vr \
+	SemcAlbum-albumLive-release \
+	SemcMusic \
+	Wallpaper-liquid-pdx203-release \
 
 
 PRODUCT_SYSTEM_SERVER_APPS += \
@@ -82,6 +85,7 @@ PRODUCT_SYSTEM_SERVER_APPS += \
 
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libeffects/data/audio_effects.conf:system/etc/audio_effects.conf
+	packages/apps/SemcMusic/privapp-permissions-sony.xml:system/etc/permissions/privapp-permissions-sony.xml
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.carrier=unknown \
