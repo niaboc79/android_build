@@ -86,7 +86,7 @@ PRODUCT_SYSTEM_SERVER_APPS += \
 
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libeffects/data/audio_effects.conf:system/etc/audio_effects.conf
-	
+
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.carrier=unknown \
