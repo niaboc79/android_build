@@ -92,4 +92,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.carrier=unknown \
     ro.config.notification_sound=Popcorn.ogg \
     ro.config.alarm_alert=Bright_morning.ogg \
-	ro.face.moto_unlock_service=true \
+	

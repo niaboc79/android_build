@@ -27,6 +27,10 @@ $(call inherit-product-if-exists, frameworks/base/data/sounds/GoogleAudio.mk)
 # Properties set in product take precedence over those in vendor.
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.apex.updatable=false
+	
+# Face Unlock
+PRODUCT_PRODUCT_PROPERTIES += \	
+	ro.face.moto_unlock_service=true \
 
 # Additional settings used in all AOSP builds
 PRODUCT_PRODUCT_PROPERTIES += \
