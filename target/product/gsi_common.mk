@@ -29,8 +29,14 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.apex.updatable=false
 	
 # Face Unlock
-PRODUCT_PRODUCT_PROPERTIES += \	
-	ro.face.moto_unlock_service=true \
+TARGET_FACE_UNLOCK_SUPPORTED := false
+ifneq ($(TARGET_DISABLE_ALTERNATIVE_FACE_UNLOCK), true)
+PRODUCT_PACKAGES += \
+    FaceUnlockService
+TARGET_FACE_UNLOCK_SUPPORTED := true
+endif
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.face.moto_unlock_service=$(TARGET_FACE_UNLOCK_SUPPORTED)
 
 # Additional settings used in all AOSP builds
 PRODUCT_PRODUCT_PROPERTIES += \
